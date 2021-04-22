@@ -6,7 +6,6 @@
 * @date 12/04/2021
 *
 *
-*
 */
 
 #include <stdio.h>
