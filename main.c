@@ -1,3 +1,14 @@
+/**
+* @file main.c
+* @brief  tester le déplacement de notre joueur 
+* @author  mannai amira
+* @version 1.2
+* @date 12/04/2021
+*
+*
+*
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <SDL/SDL.h>
@@ -86,6 +97,12 @@ scanf("%d",&g);
 
     return 0;
 }
+
+
+
+
+
+
 
 
 

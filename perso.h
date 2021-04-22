@@ -1,3 +1,6 @@
+/**
+* @file perso.h
+*/
 #ifndef perso_H
 #define perso_H
 #include <stdio.h>
@@ -6,6 +9,11 @@
 #include <SDL/SDL_image.h>
 #include "utilitaire.h"
 
+
+/**
+* @struct perso
+* @brief structure pour le personnage
+*/
 typedef struct {
 	SDL_Rect position;
         SDL_Rect frame;
