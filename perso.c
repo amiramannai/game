@@ -1,8 +1,20 @@
+/**
+* @file personnage.c
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
 #include "perso.h"
+
+
+/**
+* @brief  initialiser perso  
+* @param p de type perso
+
+* @return p
+*/
+
 
 void initialisePerso(perso * p){
 int vi,sc;
@@ -35,6 +47,14 @@ p->vitesse=0;
 
 
 }
+
+/**
+* @brief  initialiser perso2  
+* @param p de type perso
+
+* @return p2
+*/
+
 
 void initialisePerso2(perso * p2){
 int vi,sc;
@@ -92,6 +112,14 @@ SDL_FreeSurface(img);
 SDL_FreeSurface(img2);
 }
 
+
+/**
+* @brief  saut
+* @param p de type personnage
+* @param x de type int
+* @param y de type int
+* @return p
+*/
 void saut_perso(perso * p)
 {	
 if(p->position.y<700){
@@ -104,6 +132,13 @@ if(p->position.y<700){
 
 }
 
+
+/**
+* @brief move perso .
+* @param p de type perso
+* @param direction de type int
+* @return p
+*/
 int moveperso(perso *p ,SDL_Surface* screen,SDL_Event ev)
 {  
   if(p->direction != p->previousmvt)
@@ -175,6 +210,12 @@ saut_perso(p);
 
 }
 
+/**
+* @brief to animate perso .
+* @param p de type perso
+* @param direction de type int
+* @return p
+*/
 void animationperso(perso *p ,SDL_Surface* screen){
 
 
@@ -225,6 +266,14 @@ if(p2->position.y<700){
     p2->v_y = p2->v_saut;}
 
 }
+
+/**
+* @brief move perso .
+* @param p2 de type perso
+* @param direction de type int
+* @return p2
+*/
+
 
 int moveperso2(perso *p2 ,SDL_Surface* screen,SDL_Event ev)
 {  
